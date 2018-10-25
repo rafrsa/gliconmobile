@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" type="text/css" href="vendor/jquery_mobile/">    
+        <link rel="stylesheet" type="text/css" href="vendor/jquery_mobile/jquery.mobile-1.4.5.css">        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="vendor/jquery_mobile/jquery.mobile-1.4.5.min.js"></script> -->
+
+        <link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.5/css/themes/default/jquery.mobile-1.4.5.min.css">        
+        <link rel="shortcut icon" href="http://demos.jquerymobile.com/1.4.5/favicon.ico">
+        <script src="http://demos.jquerymobile.com/1.4.5/js/jquery.js"></script>        
+        <script src="http://demos.jquerymobile.com/1.4.5/js/jquery.mobile-1.4.5.min.js"></script>
+
+
+        <title>Glicon</title>
+    </head>
+    <body>
+            
+        <div data-role="page" id="foo">
+            <div data-role="header">
+                <h1>Glicon</h1>
+            </div>
+        
+            <div role="main" class="ui-content" style="text-align: center">
+                <p>última medição</p>
+                <p>125</p>
+                <a href="#bar">Nova medição</a>
+            </div>
+        
+            <div data-role="footer" style="position: absolute; bottom: 0; width: 100%;">
+                <h4>&copy; Glicon 2018</h4>
+            </div>
+        </div>
+            
+        <div data-role="page" id="bar">        
+            <div data-role="header">
+                <h1>Nova Medição</h1>
+            </div>
+        
+            <div role="main" class="ui-content">
+                <label for="txtNovaGlicemia">Valor</label>
+                <p><input id="txtNovaGlicemia" type="text"/></p>
+                <p><a href="#foo">Voltar</a></p>
+            </div>
+        
+            <div data-role="footer" style="position: absolute; bottom: 0; width: 100%;">
+                <h4>&copy; Glicon 2018</h4>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>        
+    </body>
+</html>
